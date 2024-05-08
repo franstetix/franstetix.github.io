@@ -1,2 +1,0 @@
-# haroem-web
-Practice website
