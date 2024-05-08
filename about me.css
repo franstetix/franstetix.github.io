@@ -1,0 +1,236 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-areas:
+'sidebar sidebar'
+'judul judul'
+'aboutpic1 aboutpic1-text'
+'experience experience'
+'explist1 explist2';
+gap: 10px;
+}
+
+.logo {
+margin-left: 10px;
+margin-right: 5px;
+margin-bottom: 10px;
+margin-top: 0px;
+}
+
+body{
+  min-height: 100vh;
+  background-color: #191919;
+}
+
+nav{
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  grid-area: sidebar;
+}
+
+.judul{
+  place-self: center;
+  place-items: center;
+  grid-area: judul;
+}
+
+.judul h1 {
+  margin: 20px;
+  display: grid;
+  font-family: Baskerville Old Face;
+  color: #FFFDFD;
+}
+/* Buat Nav */
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li{
+  height: 50px;
+}
+
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-family: Baskerville Old Face;
+}
+
+nav a:hover{
+  background-color: #0B3954;
+  color: #FFFDFD;
+}
+
+nav li:first-child{
+  margin-right: auto;
+  width: 18%;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0; 
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li{
+  width: 100%;
+}
+
+.sidebar a{
+  width: 100%;
+}
+
+.menu-button{
+  display: none;
+}
+
+
+/*PERMEDIAAN */
+@media(max-width: 800px){
+  .hideOnMobile{
+      display: none;
+  }
+  .menu-button{
+      display: block;
+  }
+
+}
+
+@media(max-width: 400px){
+  .sidebar{
+      width: 100%;
+  }
+}
+
+
+/*BUAT DIV KONTEN*/
+.aboutpic1 {
+  display: grid;
+  place-self: center;
+  place-items: end;
+  grid-area: aboutpic1;
+}
+
+.aboutpic1 img {
+justify-self: end;
+align-items: end;
+}
+
+.aboutpic1-text {
+  margin: 10px;
+  display: grid;
+  align-items: center;
+  place-self: center;
+  grid-area: aboutpic1-text;
+  }
+
+.aboutpic1-text h2 {
+  justify-content: start;
+  font-family: Baskerville Old Face;
+  color: #FFFDFD;
+  }
+
+.aboutpic1-text p {
+justify-content: center;
+font-family: Arial, Helvetica, sans-serif;
+color: #FFFDFD;
+}
+
+.experience {
+  grid-area: experience;
+}
+
+.experience h1 {
+  margin: 20px;
+  justify-content: center;
+  font-family: Baskerville Old Face;
+  color: #FFFDFD;
+}
+  
+
+.explist1 {
+margin: 20px;
+padding: 10px;
+display: grid;
+align-items: center;
+justify-content: end;
+grid-area: explist1;
+}
+
+.text{
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFDFD;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text a {
+  text-decoration: none;
+  color: #FFFDFD;
+}
+
+.explist1 p {
+  /*padding: 20px;*/
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFDFD;
+  }
+
+.explist2 {
+  margin: 20px;
+  padding: 10px;
+  display: grid;
+  grid-area: explist2;
+  }
+
+.explist2 p {
+  /*padding: 20px;*/
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFDFD;
+   }
+
+.explist2 h3{
+text-align: left;
+justify-content: center;
+font-family: Baskerville Old Face;
+color: #FFFDFD;
+}
+
+
+h1 {
+margin: 20px;
+display: flex;
+justify-content: center;
+font-family: Baskerville Old Face;
+color: #FFFDFD;
+}
+
+
+
+
+
+

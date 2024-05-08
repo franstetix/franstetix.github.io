@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <title>fr. abt me</title>
+    <link rel="stylesheet" href="about me.css">
+</head>
+
+<body>
+  <div class="grid-container">
+   <nav>
+    <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="previous project.html">Previous Project</a></li>
+        <li><a href="about me.html">About Me</a></li>
+    </ul>
+    <ul>
+        <li class="logo"><img src="images/Logo FR.png" width="60px"></li>
+        <li class="hideOnMobile"><a href="Home.html">Home</a></li>
+        <li class="hideOnMobile"><a href="previous project.html">Previous Project</a></li>
+        <li class="hideOnMobile"><a href="about me.html">About Me</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+   </nav>
+
+
+
+   <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+    
+  </script>
+
+  
+
+  <div class="judul">
+    <h1>About Me</h1>
+  </div>
+
+  <div class="aboutpic1">
+    <img src="images/IMG_3254.JPG" width="80%">
+  </div>
+  
+  <div class="aboutpic1-text">
+    <h2>Angie Franciska Panjaitan</h2>
+    <p>
+      I'm Angie Franciska Panjaitan, known as Franstetix, a Visual Communication Design student specializing in photography, videography, and video editing.
+    </p>
+  </div>
+
+  <div class="experience">
+    <h1>Socials</h1>
+  </div>
+  
+  <div class="explist1">
+    <ul>
+      <li class="text"><a href="Home.html">francisangie06@gmail.com</a></li>
+      <li class="text"><a href="https://www.instagram.com/franstetix/">IG: @franstetix</a></li>
+  </ul>
+  </div>
+
+
+    <div class="explist2">
+      <ul>
+        <li class="text"><a href="about me.html">Tiktok: @franstetix</a></li>
+        <li class="text"><a href="https://www.linkedin.com/in/angie-franciska-panjaitan-080200271/?originalSubdomain=id">Linkedin: Angie Franciska Panjaitan</a></li>
+    </ul>
+    </div>
+  
+  </div>
+<!-- </div> -->
+</body>
+</html>
